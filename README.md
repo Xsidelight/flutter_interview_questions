@@ -1,3 +1,6 @@
+
+![](images/flutter-lecture/flutter_pic.png)
+
 # Captions
 
 - [What is OOP?](#what-is-oop)
@@ -51,7 +54,7 @@ The basic principles of OOP involves Abstraction, Encapsulation, Inheritance and
 - Polymorphism means one name many forms. It is further of two types - static and dynamic. Static polymorphism is achieved using methods overloading and dynamic using overriding. It is closely related to inheritance. We can write a code that works on the superclass, and it will work with any subclass type as well.
 ## Explain the Flutter Architecture?
 
-![Flutter Architecture](assets/images/flutter-lecture/flutter-architecture2.png)
+![Flutter Architecture](images/flutter-lecture/flutter-architecture2.png)
 
 ***Upper layers:*** The Dart-based platform that takes care of app widgets, gestures, animations, illustrations, and materials;
 
@@ -216,7 +219,7 @@ Whether you are building a mobile app or a web application, State Management is 
 - **App State:** This is different from the ephemeral state since it is a state that we intend to share across different parts of the app and which we want to maintain between sessions. These types of states can thus be used globally. By means of scoped_model, Flutter provides support for this state. 
 The following diagram gives a better explanation of the differences between ephemeral and app states:
 
-![](assets/images/flutter-lecture/Flutter_State_Management.png)
+![](images/flutter-lecture/Flutter_State_Management.png)
 
 ## What is the difference between Async and Isolates?
 
