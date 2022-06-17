@@ -32,8 +32,8 @@
 - [DRY Principle](#dry-principle)
 - [Design Patterns](#design-patterns)
 - [GRASP](#grasp)
-
-<!-- Design Patterns -->
+- [Monolithic Architecture](#monolithic-architecture)
+- [Microservices Architecture](#microservices-architecture)
 
 
 
@@ -316,3 +316,14 @@ General Responsibility Assignment Software Principles(Patterns) is a set of nine
 - High cohesion
 - Pure fabrication
 - Controller
+
+
+## Monolithic architecture
+
+- Monolithic architecture puts all the functionalities of the software into a single codebase. The codebase, usually, is internally divided into layers, namely the presentation layer, business logic, and database layer. This codebase, consisting of layers, is then deployed a a single file.
+
+- The encapsulation of modules within a single codebase results in a tightly coupled architecture. It leads to a specific set of disadvantages.
+
+## Microservices Architecture
+
+- Functionality and business capabilities are broken down into individual modules called services. Each microservice has its own database, communicates with other microservices through API endpoints and HTTP protocols, and can be developed independently. With separate databases for individual microservice, duplication data is a common occurrence. However, the lose coupling of modules brings about a lot of operational flexibility for the teams and individual developers. Both monolithic and microservice architectures do well under certain circumstances. 
