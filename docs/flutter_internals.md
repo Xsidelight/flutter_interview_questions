@@ -2,7 +2,7 @@
 
 ## Flutter Engine
 
-![Flutter Architecture](images/flutter-lecture/flutter-architecture2.png)
+![Flutter Architecture](../images/flutter-lecture/flutter-architecture2.png)
 
  - Flutter Framework is driven by the Flutter engine frame rendering
     - The exceptions are:
@@ -25,6 +25,6 @@ The set of all `RenderObject`s form a tree, called `RenderTree` and is itself a 
 
 `RenderView` represents the total output surface of the RenderTree and is itself a special version of a RenderObject.
 
-![Render Tree](images/flutter-lecture/render_tree.png)
+![Render Tree](../images/flutter-lecture/render_tree.png)
 
 
