@@ -9,6 +9,7 @@
 - [List some of the most important features of Flutter](#list-some-of-the-most-important-features-of-flutter)
 - [What are different build modes in flutter?](#what-are-different-build-modes-in-flutter)
 - [What are the types of widgets present in flutter?](#what-are-the-types-of-widgets-present-in-flutter)
+- [Object in Flutter](#object-in-flutter)
 - [Key features and importance of Dart](#key-features-and-importance-of-dart)
 - [Dart VM. How it works?](#dart-vm-how-it-works)
 - [Explain App State](#explain-app-state)
@@ -90,6 +91,22 @@ The basic principles of OOP involves Abstraction, Encapsulation, Inheritance and
 
 - **Stateless Widget:** A widget that does nothing is a Stateless Widget. In essence, they are static and don’t store any state.   Thus, they don't save values that may change.
 - **Stateful Widget:** A widget that does anything is a Stateful Widget. Stateful widgets are dynamic by nature, which means they can monitor changes and update the UI accordingly.
+
+## Object in Flutter
+
+[Object](https://api.flutter.dev/flutter/dart-core/Object-class.html) - base class for all Dart objects except null. Because `Object` is is a root of the non-nullable Dart class hierarchy, every other non-Null Dart class is a subclass of Object. 
+
+Properties: 
+ - `hashCode`
+ - `runtimeType` - a representation of the runtime type of the object
+
+Methods: 
+ - `noSuchMethod` - invoked when a non-existent method or property is accessed.
+ - `toString` - a string representation of this object
+
+Operators:
+ - `operator==` - the equality operator
+
 
 ## Key features and importance of Dart
 

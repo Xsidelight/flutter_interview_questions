@@ -81,7 +81,7 @@ Examples: Row, Column, Stack, Padding...
 Examples: ElevatedButton, Scaffold, GestureDetector...
 
 Element Types: 
- - Component Element - elements do not directly correspond to any visual rendering part\
+ - Component Element - elements do not directly correspond to any visual rendering part
 
  - RenderObjectElement - these elements correspond to a part of the rendered screen
 
