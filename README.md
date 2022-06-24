@@ -35,6 +35,10 @@
 - [Monolithic Architecture](#monolithic-architecture)
 - [Microservices Architecture](#microservices-architecture)
 
+# Additional Sources
+
+- [Flutter Internals](docs/flutter_internals.md)
+
 
 
 ## What is OOP?
