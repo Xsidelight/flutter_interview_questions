@@ -102,6 +102,10 @@ Invalidating a renderObject means that no changes are applied to the structure o
 
 Whenever invalidation happens, the `SchedulerBinding` is requested to ask the FlutterEngine to schedule a new frame.
 
+## [addPostFrameCallBack](https://api.flutter.dev/flutter/scheduler/SchedulerBinding/addPostFrameCallback.html) method
+
+- Schedule a callback from the end of this frame. 
+
 
 ## References
 
