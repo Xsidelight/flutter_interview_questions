@@ -39,6 +39,7 @@
 # Additional Sources
 
 - [Flutter Internals](docs/flutter_internals.md)
+- [Dart Internals](docs/dart_internals.md)
 
 
 
