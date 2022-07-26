@@ -128,6 +128,20 @@ Operators:
 
 [Data Structures in Dart](https://blog.logrocket.com/dart-flutter-data-structures-comprehensive-guide/)
 
+- **List** - A list is an ordered collection of data that is stored and referenced as a single entity. Each element in the list is accessed by its index, which refers to its location. The index begins at 0 and continues to n - 1, with n being the length of the list.
+
+- **Map** - A map is a dynamic, generic collection of items stored as a key-value pair. The keys are unique entities that serve to reference and retrieve their respective values. These keys and values are also referred to as entries and can be of any data type you may choose to declare when creating the map or making it dynamic. Any interaction you’ll need to do on the values requires passing through their respective keys to access them.
+
+- **Set** - A set is a collection of unique items. Unlike lists, sets are particularly unique data structures that ensure duplicate values do not exist in the collection. A very common real-life use case for a set is checking the intersection of two collections. That is, you can efficiently obtain the elements that are common to two sets.
+
+- **HashSet** - This type of set does not have a specified order of iteration. The hashcode and equalTo() method determines the order of the items in the set. HashSet is best suited when the insertion order is unimportant, and you want to store unique values.
+
+- **LinkedHashSet** - This set stores the data based on the order in which the items are inserted — so, if you insert item A first, then item B, you are sure to get A before B when iterating the set. It is the default implementation applied when an instance of a set is created using its literals. It also accepts null values.
+
+- **SplayTreeSet** - The default operation of the SplayTreeSet is to store data that is comparable. For instance, if you insert numeric values, the SplayTreeSet orders them by default; inserting a string and a numeric value will throw an error because it cannot compare them to each other. Likewise, inserting a null value will throw an error. You can also use SplayTreeSet when you want to store data in a form you determine. You can also specify how the items should compare by passing a compare function in the constructor.
+
+- **Stack** - A stack is an abstract collection that stores data in an ordered sequence. There is only one point of entry and exit in a stack. A stack uses the model of last in, first out (LIFO) — the last item that goes into the stack is also the first item that goes out of the stack.
+
 ## Explain App State
 
 ***App State*** may also be referred to as a shared state or application state. It is possible to share app states across sections of your app and maintain user sessions in the same way. Here are some examples of App State:  
