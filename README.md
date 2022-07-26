@@ -11,6 +11,7 @@
 - [What are the types of widgets present in flutter?](#what-are-the-types-of-widgets-present-in-flutter)
 - [Object in Flutter](#object-in-flutter)
 - [Key features and importance of Dart](#key-features-and-importance-of-dart)
+- [Data structures in Dart](#data-structures-in-dart)
 - [Dart VM. How it works?](#dart-vm-how-it-works)
 - [Explain App State](#explain-app-state)
 - [Difference between `runApp` and `main()`](#difference-between-runapp-and-main)
@@ -122,6 +123,10 @@ Operators:
 - For better performance and to reduce code execution time, the Dart virtual machine (VM) uses both Just-in-Time (JIT) and Ahead-of-Time (AOT) compilers.
 
 - Dart is object-oriented programming, which makes it very scalable and stable for creating even complex applications.
+
+## Data structures in Dart
+
+[Data Structures in Dart](https://blog.logrocket.com/dart-flutter-data-structures-comprehensive-guide/)
 
 ## Explain App State
 
