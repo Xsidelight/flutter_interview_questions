@@ -24,6 +24,7 @@
 - [Extension methods in Dart](#extension-methods-in-dart)
 - [What are Streams?](#what-are-streams)
 - [Different type of Streams ](#different-type-of-streams)
+- [Dart VM. How it works?](#dart-vm-how-it-works)
 - [Difference between Hot reload and How restart](#difference-between-hot-reload-and-how-restart)
 - [What is BuildContext?](#what-is-buildcontext)
 - [Flutter Testing](#flutter-testing)
