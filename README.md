@@ -274,17 +274,16 @@ Dependency injection is a design pattern that allows you to write more modular, 
 
 Here are some best practices for using dependency injection in Flutter:
 
-Use a dependency injection framework or library to manage your dependencies and make it easier to inject them into your classes. Some popular options for dependency injection in Flutter include inject, get_it, and flutter_injector.
+- Use a dependency injection framework or library to manage your dependencies and make it easier to inject them into your classes. Some popular options for dependency injection in Flutter include [injectable](https://pub.dev/packages/injectable) and [get_it](https://pub.dev/packages/get_it)
 
-Define your dependencies as abstract classes or interfaces, rather than concrete classes. This will make it easier to swap out different implementations of the dependencies, and will allow you to use dependency injection for testing.
+- Define your dependencies as **abstract** classes or **interfaces**, rather than concrete classes. This will make it easier to swap out different implementations of the dependencies, and will allow you to use dependency injection for testing.
 
-Use the @injectable annotation to mark classes that can be injected as dependencies. This will help the dependency injection framework to identify which classes can be injected, and will make it easier to manage your dependencies.
+- Create a new dart file and define a global var for your GetIt instance. Define a top-level function (lets call it configureDependencies) then annotate it with `@injectableInit`. Call the Generated func `getIt.init()`, or your custom initializer name inside your configure func and pass in the getIt instance. Call `configureDependencies()` in your main func before running the App.
 
-Use the @provide annotation to mark the methods that provide the dependencies to be injected. This will help the dependency injection framework to identify which methods provide the dependencies, and will make it easier to inject the dependencies into your classes.
+-  annotate your injectable classes with `@injectable` and let the generator do the work.
+-  run command `flutter packages pub run build_runner build`  
 
-Inject your dependencies into your classes using the @inject annotation. This will tell the dependency injection framework to inject the dependencies into your class when it is created, and will make it easy to use the dependencies in your class.
 
-By following these best practices, you can effectively use dependency injection in your Flutter app to make your code more modular, flexible, and testable.
 
 ## SOLID Principles
 
