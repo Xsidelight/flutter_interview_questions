@@ -32,6 +32,7 @@
 - [What is the difference between Async and Isolates?](#what-is-the-difference-between-async-and-isolates)
 - [Dependency Injection](#dependency-injection)
 - [SOLID Principles](#solid-principles)
+- [CUPID principles](#cupid-principles)
 - [DRY Principle](#dry-principle)
 - [Design Patterns](#design-patterns)
 - [GRASP](#grasp)
@@ -303,6 +304,24 @@ Dependency injection in Flutter is a technique in which one object supplies the 
     - Abstractions should not depend on details. Details should depend on abstractions.
 
     ***GOAL***: reducing the dependency of a high-level Class on the low level Class by introducing an interface.
+    
+## CUPID principles
+
+CUPID (Clean, Unidirectional, Predictable, Immutable, and Decoupled) is a set of principles for developing software using the Dart programming language. These principles can help to improve the quality and maintainability of your code, and are based on the concepts of clean architecture, functional programming, and reactive programming.
+
+Here are some examples of how you might apply the CUPID principles in Dart:
+
+Clean: Write your code using a modular, organized, and easily understandable structure. For example, you could use the mixin keyword to create a mixin that defines common behavior for multiple classes, and then use that mixin in your classes to avoid repeating code.
+
+Unidirectional: Use unidirectional data flow to manage the state of your app and make it easier to understand and debug. For example, you could use the Stream class to implement a unidirectional data flow, and then use StreamBuilder widgets to automatically rebuild parts of your app's UI when the data in the stream changes.
+
+Predictable: Make your app's behavior predictable and easy to understand by using well-defined, consistent, and testable code. For example, you could use the @immutable annotation to mark classes as immutable, which means their state cannot be changed after they are created. This can help to make your code more predictable, because the state of an immutable object will always be the same.
+
+Immutable: Use immutable objects to help ensure that your code is correct, efficient, and easy to reason about. For example, you could use the const keyword to create constants, which are values that cannot be changed once they are created. This can help to make your code more predictable, because the value of a constant will always be the same.
+
+Decoupled: Decouple your code to make it more modular, flexible, and reusable. For example, you could use the abstract keyword to define an abstract class, which provides a common interface for other classes to implement. This can help to decouple your code, because the implementation details of the classes that implement the abstract class are hidden.
+
+By following the CUPID principles, you can write clean, maintainable, and efficient code in Dart.
 
 
 ## DRY Principle
