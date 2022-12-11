@@ -270,7 +270,21 @@ The following diagram gives a better explanation of the differences between ephe
 
 ## Dependency Injection 
 
-Dependency injection in Flutter is a technique in which one object supplies the dependencies of another object. A dependency is an object that can be used in the class. It can be a Network service, Database service, Location service etc.
+Dependency injection is a design pattern that allows you to write more modular, flexible, and testable code in Flutter. It involves passing objects that a class depends on (called dependencies) to the class, rather than creating the dependencies inside the class. This can help to make your code more reusable and easier to test, because the dependencies are provided from the outside, rather than being tightly coupled to the class.
+
+Here are some best practices for using dependency injection in Flutter:
+
+Use a dependency injection framework or library to manage your dependencies and make it easier to inject them into your classes. Some popular options for dependency injection in Flutter include inject, get_it, and flutter_injector.
+
+Define your dependencies as abstract classes or interfaces, rather than concrete classes. This will make it easier to swap out different implementations of the dependencies, and will allow you to use dependency injection for testing.
+
+Use the @injectable annotation to mark classes that can be injected as dependencies. This will help the dependency injection framework to identify which classes can be injected, and will make it easier to manage your dependencies.
+
+Use the @provide annotation to mark the methods that provide the dependencies to be injected. This will help the dependency injection framework to identify which methods provide the dependencies, and will make it easier to inject the dependencies into your classes.
+
+Inject your dependencies into your classes using the @inject annotation. This will tell the dependency injection framework to inject the dependencies into your class when it is created, and will make it easy to use the dependencies in your class.
+
+By following these best practices, you can effectively use dependency injection in your Flutter app to make your code more modular, flexible, and testable.
 
 ## SOLID Principles
 
