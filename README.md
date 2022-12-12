@@ -232,6 +232,8 @@ Future<int> sumStream(Stream<int> stream) async {
 
 Dart VM is a virtual machine in the sense that it provides an execution environment for a hig-level programming language like Dart. However, that doesn't mean that your Dart code is always interpreted or JIT-compiled when executed on the Dart-VM.
 
+[Link](https://mrale.ph/dartvm/) to Dart VM article.
+
 Dart VM has multiple ways to execute the code, for example:
 
 - from source or Kernel binary using JIT;
