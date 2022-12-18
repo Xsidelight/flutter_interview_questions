@@ -360,21 +360,25 @@ extension NumberParsing on String {
 <!-- Design Patterns -->
 ## Design Patterns
 
-## Creational patterns
+Singleton: The Singleton design pattern ensures that a class has only one instance, and provides a global access point to that instance.
 
-### Builder Pattern
+Factory: The Factory design pattern provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created.
 
-Separate the construction of a complex object from its representation so that the same construction process can create different representations.
+Abstract Factory: The Abstract Factory design pattern provides an interface for creating related or dependent objects without specifying their concrete classes.
 
-### Singleton Pattern 
+Builder: The Builder design pattern separates the construction of a complex object from its representation, so that the same construction process can create different representations.
 
-Ensure a class has one instance, and provide global access to it.
+Prototype: The Prototype design pattern allows you to create new objects by copying existing objects, rather than creating new objects from scratch.
 
-## Structural patterns
+Adapter: The Adapter design pattern allows you to adapt one interface to another, so that classes can work together that couldn't otherwise because of incompatible interfaces.
 
-### Adapter Pattern
+Bridge: The Bridge design pattern decouples an abstraction from its implementation, so that the two can vary independently.
 
-Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces. 
+Decorator: The Decorator design pattern allows you to add new behavior to existing objects dynamically, by wrapping them in an object of a decorator class.
+
+Facade: The Facade design pattern provides a simplified interface to a complex system, hiding its internal complexity.
+
+Observer: The Observer design pattern allows objects to be notified when the state of another object changes.
 
 
 ## GRASP 
