@@ -19,12 +19,15 @@
   - [Dart VM. How it works?](#dart-vm-how-it-works)
   - [Data structures in Dart](#data-structures-in-dart)
   - [const, static and final](#const-static-and-final)
+  - [Equality in Dart](#equality-in-dart)
   - [Factory constructor in Dart](#factory-constructor-in-dart)
   - [Key features and importance of Dart](#key-features-and-importance-of-dart)
   - [What is the use of Mixins?](#what-is-the-use-of-mixins)
   - [Extension methods in Dart](#extension-methods-in-dart)
   - [What are Streams?](#what-are-streams)
   - [Different type of Streams](#different-type-of-streams)
+  - [Dart GC](#dart-gc)
+  - [Tree Shaking](#tree-shaking)
 - [Flutter](#flutter)
   - [Explain the Flutter Architecture?](#explain-the-flutter-architecture)
   - [List some of the most important features of Flutter](#list-some-of-the-most-important-features-of-flutter)
@@ -32,7 +35,7 @@
   - [What are the types of widgets present in flutter?](#what-are-the-types-of-widgets-present-in-flutter)
   - [Object in Flutter](#object-in-flutter)
   - [Explain App State](#explain-app-state)
-  - [Difference between `runApp` and `main()`](#difference-between-runapp-and-main)
+  - [Difference between runApp and main()](#difference-between-runapp-and-main)
   - [Packages and plugins](#packages-and-plugins)
   - [What are keys in Flutter?](#what-are-keys-in-flutter)
   - [Explain different widgets](#explain-different-widgets)
@@ -247,6 +250,20 @@ The main difference between these lies in when and how VM converts Dart source c
 
 - **Stack** - A stack is an abstract collection that stores data in an ordered sequence. There is only one point of entry and exit in a stack. A stack uses the model of last in, first out (LIFO) — the last item that goes into the stack is also the first item that goes out of the stack.
 
+`When to use Map, HashMap and LinkedHashMap`
+
+**Map**: This is a built-in class in Dart that provides a basic key-value mapping. It does not guarantee any specific order of the keys and values, so it is useful when the order of elements does not matter. It's an unordered collection of key-value pairs.
+
+**HashMap**: This is a built-in class in Dart that is similar to Map, but it uses a hash table to store the key-value pairs. This allows for faster lookups of keys, but it doesn't maintain the order of the keys. It's an unordered collection of key-value pairs, that is good for large number of items.
+
+    - When the put method is called on a HashMap, it will either add a new key-value pair to the map or update the value for an existing key.
+    - In the context of collections, a bucket is a storage location for a group of similar items. In a HashMap, each bucket is used to store one or more key-value pairs that have the same hash code.
+    - A collision in a HashMap occurs when two or more keys have the same hash code and are stored in the same bucket. Collisions are resolved by using a technique called open addressing or chaining.
+
+**LinkedHashMap**: This is a built-in class in Dart that is similar to HashMap, but it maintains the order in which the elements were inserted. This means that the keys are iterated in the order they were added. It's useful when the order of elements is important and you want to iterate over the elements in that order.
+
+In general, you can use Map when the order of elements does not matter and you have a small number of items, and HashMap when the order of elements does not matter and you have a large number of items. LinkedHashMap is useful when the order of elements is important and you want to iterate over the elements in that order.
+
 ## const, static and final
 
 In Dart, there are several keywords that are used to indicate the level of mutability of a variable or a class member.
@@ -259,6 +276,16 @@ In Dart, there are several keywords that are used to indicate the level of mutab
 
 In summary, final variables can't be reassigned, static variables and methods can be called directly from the class rather than the instance and const variables are constant and can be computed at compile time.
 
+## Equality in Dart
+
+In Dart, the `==` operator is used to check if two objects are equal. This is known as the default equality operator. By default, it compares the objects based on their memory addresses, so two objects with the same properties may not be considered equal if they were created in different locations in memory.
+
+If you want to check if two objects are equal based on their properties, you need to override the `==` operator and provide your own implementation. You can do this by defining the operator `==` method in your class.
+
+Additionally, Dart provides an `Object.equals` method that can be overridden to check for equality based on the properties of the object. It is called by `==` when used to compare two objects.
+
+It is also possible to use the `Object.hashCode` method to determine if two objects are equal. This method returns an integer that represents the object's state, which can be used to compare the equality of two objects.
+
 ## Factory constructor in Dart
 
 In Dart, a factory constructor is a constructor that uses the factory keyword. A factory constructor is used to create an object of a class, but it doesn't have to create a new instance of the class every time it is called.
@@ -270,7 +297,6 @@ A factory constructor can be useful in cases where you want to return an object 
 The syntax for factory constructor is as follows:
 
 ```Dart
-Copy code
 class MyClass {
   factory MyClass() {
     // logic to return an instance of MyClass or a subtype of MyClass
@@ -322,6 +348,22 @@ extension NumberParsing on String {
   // ···
 }
 ```
+
+## Dart GC
+
+Dart is a programming language that uses a garbage collector to manage memory. The Garbage Collector (GC) automatically manages the memory used by an application, and frees up memory that is no longer in use. This is done to prevent memory leaks and ensure that the application runs efficiently.
+
+In Dart, GC uses a mark-and-sweep algorithm, which works by marking all objects that are currently in use, and then sweeping through the memory to find and remove the unmarked (unused) objects. This algorithm is widely used in other languages and frameworks as well.
+
+Dart's memory management is built on the idea of a heap and a stack. The heap is where objects are allocated dynamically, and the stack is where function calls and local variables are stored. The GC periodically scans the heap to determine which objects are no longer reachable from the stack, and frees the memory associated with those objects.
+
+It's important to note that Dart's GC is designed to be efficient and minimize pauses in the application, so most of the time the GC will run in the background and not affect the performance of the application.
+
+## Tree Shaking
+
+Tree shaking is a technique used in JavaScript and other languages to remove unnecessary code from an application. It works by analyzing the code, and removing any code that is not actually used by the application. This can help to reduce the size of the application, and improve its performance. The idea is that if a piece of code is not used, it's like a dead branch of a tree, and it can be removed.
+
+Dart has a built-in tree shaking feature that removes unused code from the final binary. That means code that is not being used in your application will not be included in the final binary. This helps to keep the final binary smaller, and also can help to improve performance.
 
 # Flutter
 
