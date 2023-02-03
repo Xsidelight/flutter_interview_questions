@@ -14,6 +14,7 @@
   - [GRASP](#grasp)
   - [Monolithic Architecture](#monolithic-architecture)
   - [Microservices Architecture](#microservices-architecture)
+  - [MVC, MVP, MVVM](#mvc-mvp-mvvm)
   - [CI/CD, CDel and CDep](#cicd-cdel-and-cdep)
 - [Dart](#dart)
   - [Dart VM. How it works?](#dart-vm-how-it-works)
@@ -188,6 +189,10 @@ General Responsibility Assignment Software Principles(Patterns) is a set of nine
 ## Microservices Architecture
 
 - Functionality and business capabilities are broken down into individual modules called services. Each microservice has its own database, communicates with other microservices through API endpoints and HTTP protocols, and can be developed independently. With separate databases for individual microservice, duplication data is a common occurrence. However, the lose coupling of modules brings about a lot of operational flexibility for the teams and individual developers. Both monolithic and microservice architectures do well under certain circumstances.
+
+## MVC, MVP, MVVM
+
+![Screenshot 2023-02-03 at 10 37 27](https://user-images.githubusercontent.com/63785350/216513774-26a76dfb-52f3-4901-9d48-bfc3d3ed2284.png)
 
 ## CI/CD, CDel and CDep
 
