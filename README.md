@@ -52,6 +52,7 @@
 
 - [Flutter Internals](docs/flutter_internals.md)
 - [Dart Internals](docs/dart_internals.md)
+- [A pragmatic guide to BuildContext in Flutter](https://blog.codemagic.io/a-pragmatic-guide-to-buildcontext-in-flutter/)
 
 # Software Development & Architecture
 
