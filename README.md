@@ -208,6 +208,50 @@ CDep (Continuous Deployment Pipeline) refers to the set of processes and tools t
 
 In a nutshell, CI is all about integrating code changes, CD is all about deploying code to production and CDel is a combination of both but with the manual step of deploying the code to production and CDep is the set of tools and processes that help automating all the previous steps.
 
+## When to name files `service`, `helper`, `manager` and `util`
+
+**Util**: A util, or utility, is typically a collection of static methods that perform common, often stateless functions. They usually provide a way to abstract and reuse pieces of code that don’t clearly belong to any particular module or feature. They're often used for tasks such as string manipulation, number conversion, etc.
+
+Example:
+
+```Dart
+// string_utils.dart
+String capitalize(String input) {...}
+```
+
+**Service**: A service often implies an object or function used to handle complex operations or business logic, usually requiring some form of state or interaction with an external system. Services might deal with data fetching, caching, or hardware interaction. Services in the context of Flutter often refer to classes or providers that manage state or connect to databases, APIs, etc.
+
+Example:
+
+```Dart
+// user_service.dart
+class UserService {
+  Future<User> fetchUser(int userId) {...}
+}
+```
+
+**Manager**: Manager is a term often used for a class or object that manages resources or complex operations. For example, a DatabaseManager might handle connecting to a database, running queries, and closing the connection.
+
+Example:
+
+```Dart
+// database_manager.dart
+class DatabaseManager {
+  Future<Database> openDb(String dbName) {...}
+}
+```
+
+**Helper**: A helper usually provides additional, often simplified interfaces or shortcuts for a more complex system. It might wrap complex functions or classes to provide an easier or more readable way of using them. Helpers can be stateful or stateless, depending on their purpose.
+
+Example:
+
+```Dart
+// auth_helper.dart
+class AuthHelper {
+  Future<bool> isAuthenticated() {...}
+}
+```
+
 # Dart
 
 ## Dart VM. How it works?
