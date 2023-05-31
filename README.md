@@ -16,6 +16,7 @@
   - [Microservices Architecture](#microservices-architecture)
   - [MVC, MVP, MVVM](#mvc-mvp-mvvm)
   - [CI/CD, CDel and CDep](#cicd-cdel-and-cdep)
+  - [When to name files `service`, `helper`, `manager` and `util`](#when-to-name-files-service-helper-manager-and-util)
 - [Dart](#dart)
   - [Dart VM. How it works?](#dart-vm-how-it-works)
   - [Data structures in Dart](#data-structures-in-dart)
