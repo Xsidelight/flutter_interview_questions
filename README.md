@@ -391,17 +391,14 @@ Multiple inheritances are not supported by Dart. Thus, we need mixins to impleme
 
 ## Dependencies in Flutter
 
-Intrinsic (Direct) Dependencies:
-
-- These are the dependencies that you explicitly define in your pubspec.yaml because your project directly uses them.
+- `Intrinsic (Direct) Dependencies:` These are the dependencies that you explicitly define in your pubspec.yaml because your project directly uses them.
 Think of these as the main tools or libraries you've decided to use directly in your project. For instance, if you're building a Flutter app and decide to use the http package to make network requests, then the http package becomes a direct/intrinsic dependency.
-Transitive (Indirect) Dependencies:
 
-- When you add a direct dependency, that dependency might rely on other packages to work correctly. These secondary dependencies are termed as transitive or indirect dependencies.
-Using the previous example: let's say the http package itself relies on another package named async_helpers (hypothetical name). When you add http to your project, Dart's package manager will also fetch async_helpers because http needs it to function. You might not use async_helpers directly, but it's added automatically because one of your direct dependencies needs it.
-Managing Dependencies:
 
-- Dart's package manager (pub) is pretty smart about managing these dependencies. When you run flutter pub get, it fetches all the required packages (both intrinsic and transitive) and ensures they are compatible with each other.
+- `Transitive (Indirect) Dependencies:` When you add a direct dependency, that dependency might rely on other packages to work correctly. These secondary dependencies are termed as transitive or indirect dependencies. Using the previous example: let's say the http package itself relies on another package named async_helpers (hypothetical name). When you add http to your project, Dart's package manager will also fetch async_helpers because http needs it to function. You might not use async_helpers directly, but it's added automatically because one of your direct dependencies needs it.
+
+
+- `Managing Dependencies:` Dart's package manager (pub) is pretty smart about managing these dependencies. When you run flutter pub get, it fetches all the required packages (both intrinsic and transitive) and ensures they are compatible with each other.
 It's essential to keep an eye on your pubspec.lock file. This file gets generated automatically and lists all the exact versions of the packages (both direct and transitive) your project uses. It ensures that every time you or another developer work on the project, the same package versions are used, providing consistency.
 
 ## Extension methods in Dart
